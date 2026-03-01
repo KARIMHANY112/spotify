@@ -1,0 +1,52 @@
+name: spotifyy       # ← match the package name used in your imports
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^2.0.7
+  flutter_bloc: ^9.1.1
+  hydrated_bloc: ^10.1.1
+  path_provider: ^2.0.15
+  firebase_core: ^4.4.0
+  firebase_auth: ^6.1.4
+  get_it: ^9.2.1
+  dartz: ^0.10.1
+  cloud_firestore: ^6.1.2
+  just_audio: ^0.10.5       # ← added, used in app.dart
+  audioplayers: ^6.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/vectors/
+
+  fonts:
+    - family: Satoshi
+      fonts:
+        - asset: assets/fonts/Satoshi-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Satoshi-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/Satoshi-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Satoshi-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Satoshi-Light.ttf
+          weight: 300
